@@ -1,0 +1,301 @@
+/*body tag*/
+body{
+    margin: auto;
+    background-color: black; 
+    color:white;
+}
+/* for dark and light mode */
+.mylight{
+    background-color:white;
+    color:black;
+}
+.moon {
+    display: none;
+  }
+  
+.sun {
+    display: block;
+  }
+  
+.mylight .moon {
+    display: block;
+  }
+  
+.mylight .sun {
+    display: none;
+}
+/* Coupon */
+#main{
+    z-index:1;
+} 
+
+#coupon{
+    height:383px;
+    width:856px;
+    /* background-color: red; */
+    z-index:100;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 22%;
+    visibility: hidden;
+}
+#coupon img{
+    height: 100%;
+    width: 100%;
+}
+#close{
+    color: black;
+}
+/*Header Section*/
+header{
+     height: 80px;
+     background-color: black;
+     position: sticky;
+     top: 0; 
+     width: 100%;
+     z-index:1;
+
+} 
+ 
+#Img > a > img{
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 150px;
+    float: left
+}
+
+input{
+    width: 500px;
+    height: 40px;
+    margin-top: -5px;
+    /* margin-left: 50px; */
+    /* float: left; */
+}
+
+.location{
+    float: left;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+.location button{
+    background-color: black;
+}
+#b1{
+    height: 39px;
+    width: 35px;
+}
+.location a{
+    font-size: 22px;
+    color: white;
+}
+.location a:hover{
+    text-decoration: none;
+}
+
+.location > a > img{
+    height: 40px;
+    width: 25px;
+    margin-left: 50px;
+    margin-top: 24px;
+}
+#mode{
+    background-color: black;
+    width: 3%;
+    margin-top: 2%;
+    margin-left: 2%;
+    border-color: black;
+}
+#mode img{
+   height:100% ;
+   width: 100%;
+   
+}
+#out{
+
+    color: white;
+    font-size: 15px;
+}
+#lb{
+    height: 35px;
+    width: 35px;
+}
+/*banner*/
+#banner{
+    height: 400px;
+    /*border: 2px solid black;*/
+    background-image: url(Images/coupon\ image.avif);
+    background-size:  100% 400px;
+}
+/*Main Body*/
+
+
+.mainBody{
+     width: 80%;
+     margin-top: 4%;
+     margin-left: 10%;
+     /* height: 600px; */
+     /* background-color: rgb(128, 128, 128); */
+     /* border:2px solid red; */
+}
+
+#MainHead{
+    /* color: white; */
+    margin-left: 2%;
+    font-size: 30px;
+    
+}
+
+#tiles{
+    width:100% ;
+    /* display: inline-block; */
+}
+.tileContainer {
+    height:225px;
+    width:31%;
+    margin-left:2%;
+    margin-top:2%;
+    /* border:2px solid blue; */
+    display: inline-block;
+}
+.tileContainer1 {
+    height:250px;
+    width:31%;
+    margin-left:2%;
+    margin-top:2%;
+    /* border:2px solid blue; */
+    display: inline-block;
+}
+.tileContainer1 img{
+    width: 100%;
+    height: 100%;
+
+}
+.tileContainer > a > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.bigcard{
+    width: 100%;
+}
+.bc1{
+    height: 280px;
+    width:47%;
+    margin-left:2%;
+    margin-top:2%;
+    /* border:2px solid blue;  */
+    display: inline-block;
+}
+.smallsqCard{
+    width: 100%;
+}
+.ssc{
+    width: 22%;
+    height:280px;
+    margin-left:2%;
+    margin-top:2%;
+    /* border:2px solid blue;  */
+    display: inline-block;
+}
+.ssc1{
+    width: 22%;
+    height: 261px;
+    margin-left:2%;
+    margin-top:2%;
+    border:0.5px solid white;
+    border-radius: 2%;
+    display: inline-block;
+}
+.ssc1 a{
+    text-decoration: none;
+}
+.bc1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.ssc img{
+    width: 100%;
+    height: 100%;
+}
+
+.ssc1 a div img{
+    height: 100%;
+    width: 100%;
+}
+.caption{
+    /* color: white; */
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.rectBox{
+    width: 100%;
+}
+.rc{
+    height: 280px;
+    width: 30%;
+    margin-left:2%;
+    margin-top:2%;
+    display: inline-block;
+}
+
+.rc a img{
+    width: 100%;
+    height: 100%;
+}
+.rc1{
+    height: 228px;
+    width: 30%;
+    margin-left:2%;
+    margin-top:2%;
+    display: inline-block;
+}
+.rc1 a img{
+    width: 100%;
+    height: 100%;
+}
+#tata{
+    margin-top: 2%;
+    height: 380px;
+    background-size: 100% 400px;
+    background-image: url(Images/tatabg.webp);
+}
+#heading{
+    /* color: white; */
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 4%;
+    margin-left: 2%;
+}
+#prefooter{
+    /* margin-top: 4%; */
+    background-size: 100% ;
+}
+#prefooter p{
+    /* color: white; */
+    font-size: 16px;
+}
+
+/*Footer*/
+footer{
+    margin-top: 2%;
+    background-size: 100% 500px;
+    background-color:#1d1d1d ;
+}
+footer div h5{
+     color: white; 
+    padding-top: 5%;
+}
+footer div input{
+    width: 250px;
+    padding-left: -5px;
+}
+#footText{
+     color: white; 
+    font-size: 16px;
+}
+#footcent{
+    text-align: center;
+}

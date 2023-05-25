@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--HOMEPAGE-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Croma Electronics|Online Electronics Shopping|Buy Electronics Online</title>
+        
+        <!--BOOTSTRAP-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <!--FAVICON-->
+        <link rel="icon" href="Images/cromalogo.jpg" />
+
+        <!--CSS FILE-->
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+      <div id="main">
+        <header>
+            <!--Croma Logo 2-->
+            <div id="Img">
+               <a href="index.html"> <img src="Images/cromalogo2.jpg" alt="cromalogo2"> </a>
+            </div>
+            <!--Menu Bar-->
+            <div class="location">
+                <a href="#">
+                    <span class="glyphicon glyphicon-menu-hamburger "></span>Menu
+                </a>
+            </div>
+            <!--Search Bar-->
+            <div class="location">
+             <input type="search" placeholder="What are you looking for?"  >
+             <button id="b1"><span  class="glyphicon glyphicon-search " style="color: white;" ></span></button>
+            </div>
+            <!--Geo-Location-->
+            <div class="location">
+                <button onclick="geolocation()" id="lb">
+                     <span class="glyphicon glyphicon-map-marker" style="color: white;"></span>
+                </button>
+                <span id="out"></span>
+            </div>
+            <!--User-->
+            <div class="location">
+                <a href="#">
+                    <span class="glyphicon glyphicon-user"></span>
+                </a>
+            </div>
+            <!--Cart-->
+            <div class="location">
+                <a href="#">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                </a>
+            </div>
+            <!--Mode-->
+            <div>
+                <button onclick="changeMode()" id="mode">
+                    <img src="Images/lightmode.png" alt="light" class="sun">
+                    <img src="Images/darkMode.jpg" alt="dark" class="moon">
+                </button>
+            </div>
+        </header>
+        <!--Coupon-->
+        <div id="coupon">
+            <button id="close" onClick="closeCoupon()">&times;</button>
+            <img src="Images/cromabanner.avif" alt="coupons">
+        </div>
+        <div id="banner"></div>
+        <div class="mainBody">
+            <h2 id="MainHead">Highlights</h2>
+            <div class="tiles">
+                <div class="tileContainer">
+                    <a href="#"><img src="Images/high1.avif" alt="high1" class="img-rounded"></a>
+                </div>
+                <div class="tileContainer">
+                    <a href="#"><img src="Images/high2.avif" alt="high2" class="img-rounded"></a>
+                </div>
+                <div class="tileContainer">
+                    <a href="#"><img src="Images/high3.avif" alt="high3" class="img-rounded"></a>
+                </div>
+                <div class="tileContainer">
+                    <a href="#"><img src="Images/high4.avif" alt="high4" class="img-rounded"></a>
+                </div>
+                <div class="tileContainer">
+                    <a href="#"><img src="Images/high5.avif" alt="high5" class="img-rounded"></a>
+                </div>
+                <div class="tileContainer">
+                    <a href="#"><img src="Images/high6.avif" alt="high6" class="img-rounded"></a>
+                </div>
+            </div>
+        </div>
+        <div class="mainBody">
+            <h2 id="MainHead">New at Croma</h2>
+            <div class="bigcard">
+                <div class="bc1">
+                    <a href="#">
+                        <img src="Images/bc1.avif" alt="bc1" class="img-rounded">
+                    </a>
+                </div>
+                <div class="bc1">
+                    <a href="#">
+                        <img src="Images/bc2.avif" alt="bc2" class="img-rounded">
+                    </a>
+                </div>
+            </div>
+            <div class="smallsqCard">
+                <div class="ssc">
+                    <a href="#">
+                        <img src="Images/ssc1.avif" alt="ssc1" class="img-rounded">
+                    </a>
+                </div>
+                <div class="ssc">
+                    <a href="#">
+                        <img src="Images/ssc2.avif" alt="ssc2" class="img-rounded">
+                    </a>
+                </div>
+                <div class="ssc">
+                    <a href="#">
+                        <img src="Images/ssc3.webp" alt="ssc3" class="img-rounded">
+                    </a>
+                </div>
+                <div class="ssc">
+                    <a href="#">
+                        <img src="Images/ssc4.avif" alt="ssc4" class="img-rounded">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mainBody">
+            <h2 id="MainHead">Summer Deals</h2>
+            <div class="smallsqCard">
+                <div class="ssc">
+                    <a href="#">
+                        <img src="Images/sd1.avif" alt="sd1" class="img-rounded">
+                    </a>
+                </div>
+                <div class="ssc">
+                    <a href="#">
+                        <img src="Images/sd2.avif" alt="sd2" class="img-rounded">
+                    </a>
+                </div>
+                <div class="ssc">
+                    <a href="#">
+                        <img src="Images/sd3.avif" alt="sd3" class="img-rounded">
+                    </a>
+                </div>
+                <div class="ssc">
+                    <a href="#">
+                        <img src="Images/sd4.avif" alt="sd4" class="img-rounded">
+                    </a>
+                </div>
+                <div class="ssc">
+                    <a href="#">
+                        <img src="Images/sd5.avif" alt="sd5" class="img-rounded">
+                    </a>
+                </div>
+                <div class="ssc">
+                    <a href="#">
+                        <img src="Images/sd6.avif" alt="sd6" class="img-rounded">
+                    </a>
+                </div>
+                <div class="ssc">
+                    <a href="#">
+                        <img src="Images/sd7.avif" alt="sd7" class="img-rounded">
+                    </a>
+                </div>
+                <div class="ssc">
+                    <a href="#">
+                        <img src="Images/sd8.avif" alt="sd8" class="img-rounded"> 
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mainBody">
+            <h2 id="MainHead">Apple at Croma</h2>
+            <div class="bigcard">
+                <div class="bc1">
+                    <a href="#">
+                        <img src="Images/ap1.avif" alt="ap1" class="img-rounded">
+                    </a>
+                </div>
+                <div class="bc1">
+                    <a href="#">
+                        <img src="Images/ap2.avif" alt="ap2" class="img-rounded">
+                    </a>
+                </div>
+            </div>
+            <div class="tiles">
+                <div class="tileContainer">
+                    <a href="#">
+                        <img src="Images/ap3.avif" alt="rc1" class="img-rounded">
+                    </a>
+                </div>
+                <div class="tileContainer">
+                    <a href="#">
+                        <img src="Images/ap4.avif" alt="rc2" class="img-rounded">
+                    </a>
+                </div>
+                <div class="tileContainer">
+                    <a href="#">
+                        <img src="Images/ap5.avif" alt="rc3" class="img-rounded">
+                    </a>
+                </div>  
+            </div>
+        </div>
+        <div class="mainBody">
+            <h2 id="MainHead">Croma Exclusive</h2>
+            <div class="rectBox">
+                <div class="rc">
+                    <a href="#">
+                        <img src="Images/ce1.avif" alt="ce1" class="img-rounded">
+                    </a>
+                </div>
+                <div class="rc">
+                    <a href="#">
+                        <img src="Images/ce2.avif" alt="ce2" class="img-rounded">
+                    </a>
+                </div>
+                <div class="rc">
+                    <a href="#">
+                        <img src="Images/ce3.avif" alt="ce3" class="img-rounded">
+                    </a>
+                </div>
+            </div>
+            <div class="smallsqCard">
+                <div class="ssc">
+                    <a href="#">
+                        <img src="Images/ce4.avif" alt="ce4" class="img-rounded">
+                    </a>
+                </div>
+                <div class="ssc">
+                    <a href="#">
+                        <img src="Images/ce5.avif" alt="ce5" class="img-rounded">
+                    </a>
+                </div>
+                <div class="ssc">
+                    <a href="#">
+                        <img src="Images/ce6.avif" alt="ce6" class="img-rounded">
+                    </a>
+                </div>
+                <div class="ssc">
+                    <a href="#">
+                        <img src="Images/ce7.avif" alt="ce7" class="img-rounded">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mainBody">
+            <h2 id="MainHead">Featured Brands</h2>
+            <div class="rectBox">
+                <div class="rc1">
+                    <a href="#">
+                        <img src="Images/fb1.avif" alt="fb1" class="img-rounded">
+                    </a>
+                </div>
+                <div class="rc1">
+                    <a href="#">
+                        <img src="Images/fb2.avif" alt="fb2" class="img-rounded">
+                    </a>
+                </div>
+                <div class="rc1">
+                    <a href="#">
+                        <img src="Images/fb3.avif" alt="fb3" class="img-rounded">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mainBody">
+            <h2 id="MainHead">Computer Peripheral Store</h2>
+            <div class="smallsqCard">
+                <div class="ssc">
+                    <a href="#">
+                        <img src="Images/cps1.avif" alt="cps1" class="img-rounded">
+                    </a>
+                </div>
+                <div class="ssc">
+                    <a href="#">
+                        <img src="Images/cps2.avif" alt="cps2" class="img-rounded">
+                    </a>
+                </div>
+                <div class="ssc">
+                    <a href="#">
+                        <img src="Images/cps3.avif" alt="cps3" class="img-rounded">
+                    </a>
+                </div>
+                <div class="ssc">
+                    <a href="#">
+                        <img src="Images/cps4.avif" alt="cps4" class="img-rounded">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mainBody">
+            <h2 id="MainHead">Top Categories</h2>
+            <div class="smallsqCard">
+                <div class="ssc1">
+                    <a href="#">
+                        <div> 
+                            <img src="Images/tc1.avif" alt="tc1" class="img-rounded">
+                        </div>
+                        <div class="caption">
+                            Cameras & Accessories
+                        </div>
+                    </a>
+                </div>
+                <div class="ssc1">
+                    <a href="#">
+                        <div> 
+                            <img src="Images/tc2.avif" alt="tc2" class="img-rounded">
+                        </div>
+                        <div class="caption">
+                            Accessories
+                        </div>
+                    </a>
+                </div>
+                <div class="ssc1">
+                    <a href="#">
+                        <div> 
+                            <img src="Images/tc3.avif" alt="tc3" class="img-rounded">
+                        </div>
+                        <div class="caption">
+                            Home Appliances
+                        </div>
+                    </a>
+                </div>
+                <div class="ssc1">
+                    <a href="#">
+                        <div> 
+                            <img src="Images/tc4.avif" alt="tc4" class="img-rounded">
+                        </div>
+                        <div class="caption">
+                            Computers and Tablets
+                        </div>
+                    </a>
+                </div>
+           </div>
+        </div>
+        <div id="tata">
+            <div class="mainBody">
+                <div id="heading">The TATA Advantage</div>
+                <div class="tiles">
+                    <div class="tileContainer1">
+                        <img src="Images/ta1.avif" alt="">
+                    </div>
+                    <div class="tileContainer1">
+                        <img src="Images/ta2.avif" alt="">
+                    </div>
+                    <div class="tileContainer1">
+                        <img src="Images/ta3.avif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="prefooter">
+            <p>
+                Croma is India's first large format specialist electronics retail store. Founded in 2006, Croma brings under one roof, multi-brand digital gadgets and home electronics products. <br>
+                <br>
+
+                From large appliances such as <a href="#"> Air Conditioners</a>,<a href="#"> Refrigerators</a>, and <a href="#">
+                Televisions</a> to handy devices such as <a href=""> Laptops</a>,<a href=""> Mobile Phones</a> , and <a href=""> Cameras</a> , Croma stocks over 22,000 products from over 500 brands in more than 248 stores across 80+ major cities. <br>
+                <br>
+
+                Croma brings alive the promise of a ‘Brighter Every Day’ with a world-class ambience to shop both in-store and online on croma.com while also creating a seamless omnichannel shopping experience that lets you enjoy the best of both, online and offline worlds. <br>
+                <br>
+
+                You’ll always be spoilt for choice at Croma but will never be left confused. Experts at our stores will help you find the right appliance or gadget for your needs. Simply #AskCromaExperts or find the right electronics and appliances by yourself online with these <a href=""> Croma buying guides</a> for everything from gaming consoles, microwaves, desktops, air coolers, smart home devices, and more. <br>
+                <br>
+
+                Whether you’re setting up a new home or looking to upgrade, our range of appliances from Samsung, LG, Whirlpool, Godrej, and IFB among others will ensure you go home with the best appliance from the best brands. <br>
+                <br>
+
+                Croma’s own-label products – ACs, Refrigerators, Televisions, Washing Machines, and other kitchen appliances – aren’t just among the best in their respective categories, they’re also competitively priced. <br>
+                <br>
+
+                Be productive at work with our range of Windows and Chromebook laptops from HP, Dell, and Lenovo among others, as well as MacBook machines from Apple. Or carry your entertainment in your bag with iPad and Surface or <a href=""> Android tablets</a> from Lenovo, Samsung, and others. <br>
+                <br>
+
+                Pick the right brick for your calls and messages, gaming and binge watching: no matter if you’re an Apple fan or an Android geek, you’ll always find the right mobile phone from Apple, OnePlus, Xiaomi, and others right here at Croma. <br>
+                <br>
+
+                Avail of our exclusive deals and flash sales, and get the best prices on all electronic appliances. Buy gadgets online on <b>Croma.com</b> or from a Croma store near you, using easy EMI options, UPI, Credit Cards, and Tata Pay while also earning NeuCoins to use across all Tata brands. Already have a stash of NeuCoins? Use them here instead of cash and save big! Find out how to be part of the Croma and Tata family and get the best offers, here. <br>
+                <br>
+
+                Make the most of your appliances and gadgets by opting for extended warranty that’ll have them covered beyond the manufacturer’s standard warranty and annual maintenance plans to keep your electronics in top shape. <br>
+                <br>
+
+                Ultimately, when you’re done, let us help you dispose of your old electronics. Simply drop off your used devices and gadgets at the nearest Croma store or call <b>1800-57-27662</b> to participate in our responsible e-waste disposal programme. 
+            </p>
+        </div>
+        <footer>
+            <div class="mainBody">
+              <div id="footcent">
+                <h5>CONNECT WITH US</h3>
+                <input type="email" placeholder="Enter Email ID">
+                <p id="footText">&copy; Copyright 2022 Croma. All rights <br> reserved.</p>
+              </div>
+            </div>
+        </footer>
+      </div>
+      <!--JAVASCRIPT-->
+        <script src="croma.js"></script>
+        <script>
+             window.onload = loadCoupon()
+        </script>
+    </body>
+</html>
